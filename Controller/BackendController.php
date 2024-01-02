@@ -14,6 +14,8 @@ declare(strict_types=1);
 
 namespace Modules\BudgetManagement\Controller;
 
+use Modules\ItemManagement\Models\Attribute\ItemAttributeMapper;
+use Modules\ItemManagement\Models\Attribute\ItemAttributeTypeMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
@@ -30,7 +32,7 @@ use phpOMS\Views\View;
 final class BackendController extends Controller
 {
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -46,6 +48,22 @@ final class BackendController extends Controller
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/BudgetManagement/Theme/Backend/budgeting-dashboard');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1004601001, $request, $response);
+
+        $result = ItemAttributeTypeMapper::getAll()
+            ->with('l11n')
+            ->with('defaults')
+            ->with('defaults/l11n')
+            ->where('name', ['segment', 'section', 'sales_group', 'product_group'], 'IN')
+            ->where('l11n/language', $response->header->l11n->language)
+            ->where('defaults/l11n/language', $response->header->l11n->language)
+            ->execute();
+
+        $segmentation = [];
+        foreach ($result as $seg) {
+            $segmentation[$seg->name] = $seg;
+        }
+
+        $view->data['segmentation'] = $segmentation;
 
         return $view;
     }

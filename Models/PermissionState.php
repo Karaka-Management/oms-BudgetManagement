@@ -17,7 +17,7 @@ namespace Modules\BudgetManagement\Models;
 use phpOMS\Stdlib\Base\Enum;
 
 /**
- * Permision state enum.
+ * Permission category enum.
  *
  * @package Modules\BudgetManagement\Models
  * @license OMS License 2.0

@@ -13,7 +13,7 @@
 declare(strict_types=1);
 
 return ['BudgetManagement' => [
-    'Segments' => 'Segments',
-    'Customers' => 'Customers',
-    'Monthly' => 'Monthly',
+    'Segments' => 'Segmente',
+    'Customers' => 'Kunden',
+    'Monthly' => 'Monatlich',
 ]];

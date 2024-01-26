@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace Modules\BudgetManagement\Controller;
 
-use Modules\ItemManagement\Models\Attribute\ItemAttributeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeTypeMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\Message\RequestAbstract;

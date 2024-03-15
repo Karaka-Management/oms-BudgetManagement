@@ -16,6 +16,6 @@ return ['BudgetManagement' => [
     'Segments'  => 'Segments',
     'Customers' => 'Customers',
     'Monthly'   => 'Monthly',
-    'Category'   => 'Category',
-    'Total'   => 'Total',
+    'Category'  => 'Category',
+    'Total'     => 'Total',
 ]];

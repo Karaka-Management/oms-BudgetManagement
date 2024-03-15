@@ -48,6 +48,7 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/BudgetManagement/Theme/Backend/budgeting-dashboard');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1004601001, $request, $response);
 
+        /** @var \Modules\Attribute\Models\AttributeType[] $result */
         $result = ItemAttributeTypeMapper::getAll()
             ->with('l11n')
             ->with('defaults')

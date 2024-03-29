@@ -6,7 +6,7 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^.*/controlling/budget/dashboard(\?.*$|$)' => [
+    '^/controlling/budget/dashboard(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingDashboard',
             'verb'       => RouteVerb::GET,
@@ -17,7 +17,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/pl(\?.*$|$)' => [
+    '^/controlling/budget/pl(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingIncomeStatement',
             'verb'       => RouteVerb::GET,
@@ -28,7 +28,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/balance(\?.*$|$)' => [
+    '^/controlling/budget/balance(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingBalance',
             'verb'       => RouteVerb::GET,
@@ -39,7 +39,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/sales(\?.*$|$)' => [
+    '^/controlling/budget/sales(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingSales',
             'verb'       => RouteVerb::GET,
@@ -50,7 +50,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/material(\?.*$|$)' => [
+    '^/controlling/budget/material(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingMaterial',
             'verb'       => RouteVerb::GET,
@@ -61,7 +61,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/opex(\?.*$|$)' => [
+    '^/controlling/budget/opex(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingOpex',
             'verb'       => RouteVerb::GET,
@@ -72,7 +72,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/hr(\?.*$|$)' => [
+    '^/controlling/budget/hr(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingHR',
             'verb'       => RouteVerb::GET,
@@ -83,7 +83,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/investment(\?.*$|$)' => [
+    '^/controlling/budget/investment(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingInvestment',
             'verb'       => RouteVerb::GET,
@@ -94,7 +94,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/loan(\?.*$|$)' => [
+    '^/controlling/budget/loan(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingLoan',
             'verb'       => RouteVerb::GET,
@@ -105,7 +105,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/cashflow(\?.*$|$)' => [
+    '^/controlling/budget/cashflow(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingCashFlow',
             'verb'       => RouteVerb::GET,
@@ -116,7 +116,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/profitcenter(\?.*$|$)' => [
+    '^/controlling/budget/profitcenter(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingProfitCenter',
             'verb'       => RouteVerb::GET,
@@ -127,7 +127,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/projects(\?.*$|$)' => [
+    '^/controlling/budget/projects(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingProjects',
             'verb'       => RouteVerb::GET,
@@ -138,7 +138,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/marketing(\?.*$|$)' => [
+    '^/controlling/budget/marketing(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingMarketing',
             'verb'       => RouteVerb::GET,
@@ -149,7 +149,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/event(\?.*$|$)' => [
+    '^/controlling/budget/event(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingEvent',
             'verb'       => RouteVerb::GET,
@@ -160,7 +160,7 @@ return [
             ],
         ],
     ],
-    '^.*/controlling/budget/leasing(\?.*$|$)' => [
+    '^/controlling/budget/leasing(\?.*$|$)' => [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingLeasing',
             'verb'       => RouteVerb::GET,

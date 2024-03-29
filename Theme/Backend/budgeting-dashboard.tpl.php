@@ -99,8 +99,8 @@ echo $this->data['nav']->render();
     }
 
     .name-col {
-        width: 150px;
-        min-width: 150px;
+        width: 200px;
+        min-width: 200px;
         padding-left: 0px;
         border-right: 1px solid #000;
         overflow: clip;
@@ -171,12 +171,12 @@ echo $this->data['nav']->render();
                     <div class="checked-visibility">
                         <?php foreach ($this->data['segmentation']['section']->defaults as $section) : ?>
                         <input id="iSection<?= $section->id; ?>-expand" type="checkbox" class="vh">
-                        <div class="data-row">
+                        <div class="data-row" style="padding-left: 10px;">
                             <div class="expand-col">
                                 <label for="iSection<?= $section->id; ?>-expand" class="btn maximize"><i class="g-icon">add_circle</i></label>
                                 <label for="iSection<?= $section->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                             </div>
-                            <div class="name-col"><?= $this->printHtml($section->l11n); ?></div>
+                            <div class="name-col" style="min-width: 190px; width: 190px;"><?= $this->printHtml($section->l11n); ?></div>
                             <div><input type="number" disabled></div>
                             <div><input type="number" disabled> +0.00%</div>
                             <div><input type="number" disabled> +0.00%</div>
@@ -197,12 +197,12 @@ echo $this->data['nav']->render();
                         <div class="checked-visibility">
                             <?php foreach ($this->data['segmentation']['sales_group']->defaults as $salesgroup) : ?>
                             <input id="iSalesGroup<?= $salesgroup->id; ?>-expand" type="checkbox" class="vh">
-                            <div class="data-row">
+                            <div class="data-row" style="padding-left: 20px;">
                                 <div class="expand-col">
                                     <label for="iSalesGroup<?= $salesgroup->id; ?>-expand" class="btn maximize"><i class="g-icon">add_circle</i></label>
                                     <label for="iSalesGroup<?= $salesgroup->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                                 </div>
-                                <div class="name-col"><?= $this->printHtml($salesgroup->l11n); ?></div>
+                                <div class="name-col" style="min-width: 180px; width: 180px;"><?= $this->printHtml($salesgroup->l11n); ?></div>
                                 <div><input type="number" disabled></div>
                                 <div><input type="number" disabled> +0.00%</div>
                                 <div><input type="number" disabled> +0.00%</div>
@@ -223,12 +223,12 @@ echo $this->data['nav']->render();
                             <div class="checked-visibility">
                                 <?php foreach ($this->data['segmentation']['product_group']->defaults as $productgroup) : ?>
                                 <input id="iProductGroup<?= $productgroup->id; ?>-expand" type="checkbox" class="vh">
-                                <div class="data-row">
+                                <div class="data-row" style="padding-left: 30px;">
                                     <div class="expand-col">
                                         <label for="iProductGroup<?= $productgroup->id; ?>-expand" class="btn maximize"><i class="g-icon">add_circle</i></label>
                                         <label for="iProductGroup<?= $productgroup->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                                     </div>
-                                    <div class="name-col"><?= $this->printHtml($productgroup->l11n); ?></div>
+                                    <div class="name-col" style="min-width: 170px; width: 170px;"><?= $this->printHtml($productgroup->l11n); ?></div>
                                     <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled></div>
                                     <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
                                     <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
@@ -248,9 +248,9 @@ echo $this->data['nav']->render();
                                 </div>
                                 <div class="checked-visibility">
                                     <?php foreach ($this->data['items'] ?? [] as $item) : ?>
-                                    <div class="data-row">
+                                    <div class="data-row" style="padding-left: 30px;">
                                         <div class="expand-col"></div>
-                                        <div class="name-col"><?= $this->printHtml($item->l11n); ?></div>
+                                        <div class="name-col" style="min-width: 170px; width: 170px;"><?= $this->printHtml($item->l11n); ?></div>
                                         <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled></div>
                                         <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
                                         <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>

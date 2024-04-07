@@ -18,7 +18,7 @@ return ['BudgetManagement' => [
     'Monthly'   => 'Monatlich',
     'Category'  => 'Kategorie',
     'Total'     => 'Gesamt',
-    'A'     => 'G',
-    'Q'     => 'M',
-    'P'     => 'P',
+    'A'         => 'G',
+    'Q'         => 'M',
+    'P'         => 'P',
 ]];

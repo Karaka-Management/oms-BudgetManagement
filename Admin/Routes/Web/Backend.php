@@ -10,7 +10,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingDashboard',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -22,7 +22,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingIncomeStatement',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -34,7 +34,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingBalance',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -46,7 +46,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingSales',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -58,7 +58,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingMaterial',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -70,7 +70,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingOpex',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -82,7 +82,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingHR',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -94,7 +94,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingInvestment',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -106,7 +106,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingLoan',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -118,7 +118,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingCashFlow',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -130,7 +130,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingProfitCenter',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -142,7 +142,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingProjects',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -154,7 +154,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingMarketing',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -166,7 +166,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingEvent',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -178,7 +178,7 @@ return [
         [
             'dest'       => '\Modules\BudgetManagement\Controller\BackendController:viewBudgetingLeasing',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,

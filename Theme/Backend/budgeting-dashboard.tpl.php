@@ -72,7 +72,7 @@ echo $this->data['nav']->render();
         min-height: 34px;
     }
 
-    .data-row div {
+    .data-row > div {
         padding: .2rem 3px .2rem 3px;
         display: flex;
         flex-direction: column;
@@ -87,7 +87,7 @@ echo $this->data['nav']->render();
         background: #efefef;
     }
 
-    .data-row div:nth-child(n+3) {
+    .data-row > div:nth-child(n+3) {
         width: 95px;
         justify-content: start;
     }
@@ -151,22 +151,22 @@ echo $this->data['nav']->render();
                             <label for="iSegment<?= $segment->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                         </div>
                         <div class="name-col"><?= $this->printHtml($segment->l11n); ?></div>
-                        <div><input type="number" disabled></div>
-                        <div><input type="number" disabled> +0.00%</div>
-                        <div><input type="number" disabled> +0.00%</div>
-                        <div><input type="number" disabled> +0.00%</div>
-                        <div><input type="number" disabled> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
-                        <div><input type="number"> +0.00%</div>
+                        <div><input type="number" step="any" disabled></div>
+                        <div><input type="number" step="any" disabled> +0.00%</div>
+                        <div><input type="number" step="any" disabled> +0.00%</div>
+                        <div><input type="number" step="any" disabled> +0.00%</div>
+                        <div><input type="number" step="any" disabled> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
+                        <div><input type="number" step="any"> +0.00%</div>
                     </div>
                     <div class="checked-visibility">
                         <?php foreach ($this->data['segmentation']['section']->defaults as $section) : ?>
@@ -177,22 +177,22 @@ echo $this->data['nav']->render();
                                 <label for="iSection<?= $section->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                             </div>
                             <div class="name-col" style="min-width: 190px; width: 190px;"><?= $this->printHtml($section->l11n); ?></div>
-                            <div><input type="number" disabled></div>
-                            <div><input type="number" disabled> +0.00%</div>
-                            <div><input type="number" disabled> +0.00%</div>
-                            <div><input type="number" disabled> +0.00%</div>
-                            <div><input type="number" disabled> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
-                            <div><input type="number"> +0.00%</div>
+                            <div><input type="number" step="any" disabled></div>
+                            <div><input type="number" step="any" disabled> +0.00%</div>
+                            <div><input type="number" step="any" disabled> +0.00%</div>
+                            <div><input type="number" step="any" disabled> +0.00%</div>
+                            <div><input type="number" step="any" disabled> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
+                            <div><input type="number" step="any"> +0.00%</div>
                         </div>
                         <div class="checked-visibility">
                             <?php foreach ($this->data['segmentation']['sales_group']->defaults as $salesgroup) : ?>
@@ -203,22 +203,22 @@ echo $this->data['nav']->render();
                                     <label for="iSalesGroup<?= $salesgroup->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                                 </div>
                                 <div class="name-col" style="min-width: 180px; width: 180px;"><?= $this->printHtml($salesgroup->l11n); ?></div>
-                                <div><input type="number" disabled></div>
-                                <div><input type="number" disabled> +0.00%</div>
-                                <div><input type="number" disabled> +0.00%</div>
-                                <div><input type="number" disabled> +0.00%</div>
-                                <div><input type="number" disabled> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
-                                <div><input type="number"> +0.00%</div>
+                                <div><input type="number" step="any" disabled></div>
+                                <div><input type="number" step="any" disabled> +0.00%</div>
+                                <div><input type="number" step="any" disabled> +0.00%</div>
+                                <div><input type="number" step="any" disabled> +0.00%</div>
+                                <div><input type="number" step="any" disabled> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
+                                <div><input type="number" step="any"> +0.00%</div>
                             </div>
                             <div class="checked-visibility">
                                 <?php foreach ($this->data['segmentation']['product_group']->defaults as $productgroup) : ?>
@@ -228,45 +228,54 @@ echo $this->data['nav']->render();
                                         <label for="iProductGroup<?= $productgroup->id; ?>-expand" class="btn maximize"><i class="g-icon">add_circle</i></label>
                                         <label for="iProductGroup<?= $productgroup->id; ?>-expand" class="btn minimize"><i class="g-icon">do_not_disturb_on</i></label>
                                     </div>
-                                    <div class="name-col" style="min-width: 170px; width: 170px;"><?= $this->printHtml($productgroup->l11n); ?></div>
-                                    <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled></div>
-                                    <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                    <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                    <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                    <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                    <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
+                                    <div class="name-col" style="min-width: 170px; width: 170px;">
+                                        <div class="simple-flex wf-100">
+                                            <div style="align-self:first baseline; flex: 1;"><?= $this->printHtml($productgroup->l11n); ?></div>
+                                            <div>
+                                                <div style="height: 30px; display: flex; align-items: center;"><?= $this->getHtml('A'); ?></div>
+                                                <div style="height: 30px; display: flex; align-items: center;"><?= $this->getHtml('Q'); ?></div>
+                                                <div style="height: 30px; display: flex; align-items: center;"><?= $this->getHtml('P'); ?></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled></div>
+                                    <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                    <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                    <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                    <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                    <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
                                 </div>
                                 <div class="checked-visibility">
                                     <?php foreach ($this->data['items'] ?? [] as $item) : ?>
                                     <div class="data-row" style="padding-left: 30px;">
                                         <div class="expand-col"></div>
                                         <div class="name-col" style="min-width: 170px; width: 170px;"><?= $this->printHtml($item->l11n); ?></div>
-                                        <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled></div>
-                                        <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                        <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                        <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                        <div><input type="number" disabled> <input type="number" disabled> <input type="number" disabled> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
-                                        <div><input type="number"> <input type="number"> <input type="number"> +0.00%</div>
+                                        <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled></div>
+                                        <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                        <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                        <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                        <div><input type="number" step="any" disabled> <input type="number" step="any" disabled> <input type="number" step="any" disabled> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
+                                        <div><input type="number" step="any"> <input type="number" step="any"> <input type="number" step="any"> +0.00%</div>
                                     </div>
                                     <?php endforeach; ?>
                                 </div>

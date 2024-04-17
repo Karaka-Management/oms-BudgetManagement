@@ -55,7 +55,7 @@ final class BackendController extends Controller
             ->with('defaults/l11n')
             ->where('name', ['segment', 'section', 'sales_group', 'product_group'], 'IN')
             ->where('l11n/language', $response->header->l11n->language)
-            ->where('defaults/l11n/language', $response->header->l11n->language)
+            ->where('defaults/l11n/language', [$response->header->l11n->language, null])
             ->executeGetArray();
 
         $segmentation = [];
